@@ -1,0 +1,232 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@babel/code-frame':
+        specifier: ^7.29.0
+        version: 7.29.7
+      '@standard-schema/spec':
+        specifier: ^1.1.0
+        version: 1.1.0
+      chokidar:
+        specifier: ^4.0.3
+        version: 4.0.3
+      js-yaml:
+        specifier: ^4.1.0
+        version: 4.3.1
+      node-addon-require-builtin:
+        specifier: ^0.1.4
+        version: 0.1.5
+      picomatch:
+        specifier: ^4.0.3
+        version: 4.0.5
+      supports-color:
+        specifier: ^9.4.0
+        version: 9.4.0
+    devDependencies:
+      '@types/node':
+        specifier: ^22.20.0
+        version: 22.20.1
+      typescript:
+        specifier: ^6.0.3
+        version: 6.0.3
+
+packages:
+
+  '@babel/code-frame@7.29.7':
+    resolution: {integrity: sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-validator-identifier@7.29.7':
+    resolution: {integrity: sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==}
+    engines: {node: '>=6.9.0'}
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  '@types/node@22.20.1':
+    resolution: {integrity: sha512-EANqOCF9QFyra+4pfxUcX9STKJpCLjMbObVzljIJomAWSnuSIEAvyzEU53GaajbXJEgdh0iEcPL+DGvpUd4k1Q==}
+
+  argparse@2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  chokidar@4.0.3:
+    resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
+    engines: {node: '>= 14.16.0'}
+
+  js-tokens@4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+
+  js-yaml@4.3.1:
+    resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
+    hasBin: true
+
+  node-addon-native-custom-loader@0.1.5:
+    resolution: {integrity: sha512-rL0XXRytayIChYf1xaG9/1NzGBRTyFkQTIpn+MDz/hpr0PZw1a9PZIoH9HlYfagNawhXU+jfN650EvoSIvR7Vw==}
+    engines: {node: '>=20'}
+
+  node-addon-require-builtin-darwin-arm64@0.1.5:
+    resolution: {integrity: sha512-MZ5RyGhuU7DTbwuNpOQW81/ep8n5Yd5YlZa6dWiEfJEh+01Dl4cCKGmMCWNgb0VtqAImRtAOtmZIPtwngiemKQ==}
+    engines: {node: '>=20'}
+    cpu: [arm64]
+    os: [darwin]
+
+  node-addon-require-builtin-darwin-x64@0.1.5:
+    resolution: {integrity: sha512-wdCSPn49AdNZ2EXHQqswiXk1cROFe9zSRaAX8PwQLxmjdLt+xZF7vZP6VlqgXm+VAOHv98q8kp9m7mO9jY3OgQ==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [darwin]
+
+  node-addon-require-builtin-linux-arm64-gnu@0.1.5:
+    resolution: {integrity: sha512-hCqzKpQiknDDv6rUdZqrxCBXROg/uUruO0geUuZsdM9M/Lds45gSb4bDE958HlPaCvrDyR0wTHl3II8A7yQeew==}
+    engines: {node: '>=20'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  node-addon-require-builtin-linux-x64-gnu@0.1.5:
+    resolution: {integrity: sha512-lgP+ruwWXbcXDslhp5uIc+dFgzITEGPZ4E50WdHGt/OzcoVhN6y5z72pRRvxy8DE661//QxqmCLe72rS3SVg+w==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  node-addon-require-builtin-win32-arm64-msvc@0.1.5:
+    resolution: {integrity: sha512-KEO2eWS4lvZg6JmPPz04OdI4Ojrc7YzOs++4r6VnvwsqYN2r6mjGSGpouQkk8J2eLXBzC7X/D9wYTbUuQS8u1Q==}
+    engines: {node: '>=20'}
+    cpu: [arm64]
+    os: [win32]
+
+  node-addon-require-builtin-win32-ia32-msvc@0.1.5:
+    resolution: {integrity: sha512-iSC988EqZm5XbKWp/giW6K6EBRTrHt/YQbAkKsZLglt7PplmvvrZ7C3tUsyh1wVxUTYAaxFdE2xbqSdpw0rb6g==}
+    engines: {node: '>=20 <23'}
+    cpu: [ia32]
+    os: [win32]
+
+  node-addon-require-builtin-win32-x64-msvc@0.1.5:
+    resolution: {integrity: sha512-pjuco/ESU3ChIp7WwacWfY2ENu2K5rGAgqjcXedoiFcTrjTf5Ln/miKSuNfE6IiuJ7tfMTJH6VH5hq+C1Y8JMQ==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [win32]
+
+  node-addon-require-builtin@0.1.5:
+    resolution: {integrity: sha512-isaquiStlp7qdFpaffy+2ssJPUR/kLPRE5gqfeWbb0Ahph9H7O3BOFwThqkVaTrxfpnjrQauxlOEgvzD+snhUg==}
+    engines: {node: '>=20'}
+
+  picocolors@1.1.1:
+    resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
+  picomatch@4.0.5:
+    resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
+    engines: {node: '>=12'}
+
+  readdirp@4.1.2:
+    resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
+    engines: {node: '>= 14.18.0'}
+
+  supports-color@9.4.0:
+    resolution: {integrity: sha512-VL+lNrEoIXww1coLPOmiEmK/0sGigko5COxI09KzHc2VJXJsQ37UaQ+8quuxjDeA7+KnLGTWRyOXSLLR2Wb4jw==}
+    engines: {node: '>=12'}
+
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+
+snapshots:
+
+  '@babel/code-frame@7.29.7':
+    dependencies:
+      '@babel/helper-validator-identifier': 7.29.7
+      js-tokens: 4.0.0
+      picocolors: 1.1.1
+
+  '@babel/helper-validator-identifier@7.29.7': {}
+
+  '@standard-schema/spec@1.1.0': {}
+
+  '@types/node@22.20.1':
+    dependencies:
+      undici-types: 6.21.0
+
+  argparse@2.0.1: {}
+
+  chokidar@4.0.3:
+    dependencies:
+      readdirp: 4.1.2
+
+  js-tokens@4.0.0: {}
+
+  js-yaml@4.3.1:
+    dependencies:
+      argparse: 2.0.1
+
+  node-addon-native-custom-loader@0.1.5: {}
+
+  node-addon-require-builtin-darwin-arm64@0.1.5:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.5
+    optional: true
+
+  node-addon-require-builtin-darwin-x64@0.1.5:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.5
+    optional: true
+
+  node-addon-require-builtin-linux-arm64-gnu@0.1.5:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.5
+    optional: true
+
+  node-addon-require-builtin-linux-x64-gnu@0.1.5:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.5
+    optional: true
+
+  node-addon-require-builtin-win32-arm64-msvc@0.1.5:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.5
+    optional: true
+
+  node-addon-require-builtin-win32-ia32-msvc@0.1.5:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.5
+    optional: true
+
+  node-addon-require-builtin-win32-x64-msvc@0.1.5:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.5
+    optional: true
+
+  node-addon-require-builtin@0.1.5:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.5
+    optionalDependencies:
+      node-addon-require-builtin-darwin-arm64: 0.1.5
+      node-addon-require-builtin-darwin-x64: 0.1.5
+      node-addon-require-builtin-linux-arm64-gnu: 0.1.5
+      node-addon-require-builtin-linux-x64-gnu: 0.1.5
+      node-addon-require-builtin-win32-arm64-msvc: 0.1.5
+      node-addon-require-builtin-win32-ia32-msvc: 0.1.5
+      node-addon-require-builtin-win32-x64-msvc: 0.1.5
+
+  picocolors@1.1.1: {}
+
+  picomatch@4.0.5: {}
+
+  readdirp@4.1.2: {}
+
+  supports-color@9.4.0: {}
+
+  typescript@6.0.3: {}
+
+  undici-types@6.21.0: {}
