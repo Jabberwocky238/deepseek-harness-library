@@ -1,4 +1,7 @@
-import { EntryGroup, EntryTree, isJsExpr, type EntryOptions } from '../loader/index.ts'
+import { EntryGroup } from './config/group.ts'
+import { EntryTree } from './config/tree.ts'
+import { isJsExpr } from './config/utils.ts'
+import type { EntryOptions } from './config/entry.ts'
 import { Context, Service } from '../core/index.ts'
 import { extname } from 'node:path'
 import { access, constants, readFile, rename, writeFile } from 'node:fs/promises'

@@ -28,13 +28,9 @@
       "types": "./lib/types/plugins/hmr/index.d.ts",
       "default": "./lib/plugins/hmr/index.js"
     },
-    "./group": {
-      "types": "./lib/types/plugins/group.d.ts",
-      "default": "./lib/plugins/group.js"
-    },
     "./include": {
-      "types": "./lib/types/plugins/include.d.ts",
-      "default": "./lib/plugins/include.js"
+      "types": "./lib/types/loader/include.d.ts",
+      "default": "./lib/loader/include.js"
     },
     "./logger-console": {
       "types": "./lib/types/plugins/logger-console/index.d.ts",

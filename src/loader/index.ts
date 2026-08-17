@@ -19,6 +19,9 @@ export * from './config/tree.ts'
 export * from './config/utils.ts'
 /** Re-export Node internal module loader compatibility types. */
 export * from './internal.ts'
+/** Config-file include tree and patch overlay plugin. */
+export { default as Include } from './include.ts'
+export * from './include.ts'
 
 declare module '../core/index.ts' {
   interface Events {

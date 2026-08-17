@@ -1,7 +1,7 @@
 import { Context, Service, type Plugin } from '../../core/index.ts'
 import type { Dict } from '../../cosmokit/index.ts'
 import { ModuleLoader, type ModuleJob, type ResolveResult } from '../../loader/index.ts'
-import type { Include } from '../include.ts'
+import type { Include } from '../../loader/include.ts'
 import { FSWatcher, watch, type ChokidarOptions } from 'chokidar'
 import { dirname, relative, resolve } from 'node:path'
 import { realpath, stat } from 'node:fs/promises'

@@ -3,7 +3,8 @@
 # exports path or a missing runtime dependency fails here rather than for a user.
 set -euo pipefail
 
-tarball="$(ls "$1"/jabberwocky238-cordis-*.tgz)"
+version="$(node -p "require('./package.json').version")"
+tarball="$1/jabberwocky238-cordis-$version.tgz"
 work="$(mktemp -d)"
 cd "$work"
 

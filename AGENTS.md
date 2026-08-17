@@ -7,8 +7,8 @@ Layout under `src/`:
 - `core/` — context, fiber lifecycle, events, registry, service, logger
 - `cosmokit/` — shared utilities
 - `schemastery/` — config schema and validation
-- `loader/` — plugin tree built from configuration
-- `plugins/` — include, group, timer, hmr, logger-console
+- `loader/` — plugin tree, config-file includes, and patch overlays
+- `plugins/` — timer, hmr, logger-console
 - `index.ts` — aggregate exports and `start()`
 
 **Do NOT edit `src/` casually.** Every divergence from upstream must be logged in [FRAMEWORK.md](FRAMEWORK.md) under "Local modifications". Imports between the merged areas are relative paths; upstream's cross-package specifiers no longer resolve.

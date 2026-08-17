@@ -89,7 +89,6 @@ Each is a subpath export, named in a config file the same way an application nam
 | --- | --- |
 | `@jabberwocky238/cordis/loader` | plugin tree built from configuration |
 | `@jabberwocky238/cordis/include` | config-file includes and patch overlays |
-| `@jabberwocky238/cordis/group` | nested plugin groups |
 | `@jabberwocky238/cordis/timer` | timers released with their owner |
 | `@jabberwocky238/cordis/hmr` | hot module replacement |
 | `@jabberwocky238/cordis/logger-console` | console log exporter |
