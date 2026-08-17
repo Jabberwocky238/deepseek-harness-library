@@ -1,0 +1,47 @@
+name: publish
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      # Required for npm provenance attestation.
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      # Trusted Publishing requires an npm CLI with OIDC support.
+      - run: npm install --global npm@latest
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm run build
+
+      # A tag must match the version being published; publishing a stale
+      # version under a new tag would silently succeed as a no-op or fail late.
+      - name: Verify tag matches package version
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          pkg="$(node -p "require('./package.json').version")"
+          [ "$tag" = "$pkg" ] || { echo "tag $tag != package version $pkg" >&2; exit 1; }
+
+      - run: pnpm run verify:consumer
+
+      # Credentials come from the OIDC exchange configured as a trusted
+      # publisher on npm, so no token is stored in this repository. npm derives
+      # provenance from the same exchange.
+      - run: npm publish --access public --provenance

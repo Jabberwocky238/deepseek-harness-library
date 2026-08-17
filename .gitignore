@@ -1,0 +1,15 @@
+.env
+node_modules/
+lib/
+*.tsbuildinfo
+pnpm-debug.log
+.pnpm-store/
+.cache/
+coverage/
+tmp/
+.vscode/
+.DS_Store
+.idea
+.orig
+.sessions/
+.storages/
