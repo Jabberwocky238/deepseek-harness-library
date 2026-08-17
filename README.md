@@ -48,6 +48,13 @@ await start({ config: './cordis.yml' })
 
 `start()` creates a root context, mounts the loader, and mounts the config file as its plugin tree; it returns the context once the tree has settled. Pass `baseDir` to resolve config-relative paths against somewhere other than `process.cwd()`.
 
+The package also installs a `jwcordis` executable that starts `./cordis.yml`
+from the current working directory:
+
+```sh
+npx jwcordis
+```
+
 ## What `ctx` gives a plugin
 
 - `ctx.effect(setup)` — register a side effect and return its disposer. Unloading runs every collected disposer, so a plugin needs no teardown logic of its own.
