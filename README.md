@@ -48,12 +48,25 @@ await start({ config: './cordis.yml' })
 
 `start()` creates a root context, mounts the loader, and mounts the config file as its plugin tree; it returns the context once the tree has settled. Pass `baseDir` to resolve config-relative paths against somewhere other than `process.cwd()`.
 
-The package also installs a `jwcordis` executable that starts `./cordis.yml`
-from the current working directory:
+The package also installs a `jwcordis` executable. `start` reads `cordis.yml`
+from the current working directory and keeps Loader's dynamic module imports:
 
 ```sh
-npx jwcordis
+npx jwcordis start
 ```
+
+Calling `jwcordis` without a command remains an alias for `jwcordis start`.
+
+`build` snapshots the current configuration and bundles Cordis plus every
+configured plugin into one executable ESM file:
+
+```sh
+npx jwcordis build
+node app.js
+```
+
+Use `--config path/to/cordis.yml` with either command. Build output defaults to
+`app.js`; override it with `--outfile dist/app.js`.
 
 ## What `ctx` gives a plugin
 
